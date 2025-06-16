@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Version>1.0.0</Version>
+		<Authors>Dorset Council</Authors>
+		<Company>Dorset Council</Company>
+		<Description>Contains the contracts used for the messaging system of the Flood Online Reporting Tool.</Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageId>DorsetCouncil.FloodOnlineReportingTool.Contracts</PackageId>
+		<RepositoryUrl>https://github.com/Dorset-Council-UK/FloodOnlineReportingTool.Contracts</RepositoryUrl>
+	</PropertyGroup>
+
+</Project>
