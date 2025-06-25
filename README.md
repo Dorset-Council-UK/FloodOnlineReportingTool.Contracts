@@ -12,7 +12,7 @@ Please report any bugs via the issue tracker in GitHub.
 
 ## Contributing
 
-Please see our guide on [contributing](CONTRIBUTING.md) if you're interested in getting involved.
+Please see our guide on [contributing](https://github.com/Dorset-Council-UK/FloodOnlineReportingTool.Contracts/CONTRIBUTING.md) if you're interested in getting involved.
 
 ## Reporting security issues
 
