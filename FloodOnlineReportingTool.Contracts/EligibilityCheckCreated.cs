@@ -14,5 +14,6 @@ public record EligibilityCheckCreated(
     int ImpactDurationHours,
     bool IsOnGoing,
     bool IsUninhabitable,
-    int? VulnerableCount
+    int? VulnerableCount,
+    IReadOnlyCollection<EligibilityCheckOrganisation> Organisations
 );
