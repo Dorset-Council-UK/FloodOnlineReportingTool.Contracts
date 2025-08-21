@@ -7,12 +7,13 @@ public record EligibilityCheckCreated(
     Guid Id,
     string FloodReportReference,
     DateTimeOffset CreatedUtc,
-    long Uprn,
+    long? Uprn,
     double Easting,
     double Northing,
     DateTimeOffset? ImpactStartUTC,
     int ImpactDurationHours,
     bool IsOnGoing,
     bool IsUninhabitable,
-    int? VulnerableCount
+    int? VulnerableCount,
+    IReadOnlyCollection<EligibilityCheckOrganisation> Organisations
 );
