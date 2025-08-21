@@ -1,7 +1,7 @@
 ﻿namespace FloodOnlineReportingTool.Contracts.Shared;
 
 /// <summary>
-/// The organisation Id's.
+/// The organisation IDs.
 /// Helps ensure consistency and allows easier comparison.
 /// </summary>
 public static class OrganisationIds

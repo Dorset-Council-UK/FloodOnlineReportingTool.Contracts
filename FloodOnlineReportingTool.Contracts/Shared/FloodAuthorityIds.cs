@@ -1,7 +1,7 @@
 ﻿namespace FloodOnlineReportingTool.Contracts.Shared;
 
 /// <summary>
-/// The flood authority Id's.
+/// The flood authority IDs.
 /// Helps ensure consistency and allows easier comparison.
 /// </summary>
 public static class FloodAuthorityIds
