@@ -7,7 +7,7 @@ public record EligibilityCheckCreated(
     Guid Id,
     string FloodReportReference,
     DateTimeOffset CreatedUtc,
-    long Uprn,
+    long? Uprn,
     double Easting,
     double Northing,
     DateTimeOffset? ImpactStartUTC,

@@ -6,12 +6,13 @@
 public record EligibilityCheckUpdated(
     Guid Id,
     DateTimeOffset UpdatedUtc,
-    long Uprn,
+    long? Uprn,
     double Easting,
     double Northing,
     DateTimeOffset? ImpactStartUTC,
     int ImpactDurationHours,
     bool IsOnGoing,
     bool IsUninhabitable,
-    int? VulnerableCount
+    int? VulnerableCount,
+    IReadOnlyCollection<EligibilityCheckOrganisation> Organisations
 );
