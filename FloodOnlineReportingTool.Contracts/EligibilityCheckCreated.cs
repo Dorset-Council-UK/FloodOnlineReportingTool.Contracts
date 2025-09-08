@@ -8,6 +8,7 @@ public record EligibilityCheckCreated(
     string FloodReportReference,
     DateTimeOffset CreatedUtc,
     long? Uprn,
+    long? Usrn,
     double Easting,
     double Northing,
     DateTimeOffset? ImpactStartUTC,
@@ -15,5 +16,6 @@ public record EligibilityCheckCreated(
     bool IsOnGoing,
     bool IsUninhabitable,
     int? VulnerableCount,
-    IReadOnlyCollection<EligibilityCheckOrganisation> Organisations
+    IReadOnlyCollection<EligibilityCheckOrganisation> Organisations,
+    IReadOnlyCollection<EligibilityCheckFloodSource> FloodSources
 );
