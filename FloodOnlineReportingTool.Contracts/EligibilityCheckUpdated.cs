@@ -18,5 +18,3 @@ public record EligibilityCheckUpdated(
     IReadOnlyCollection<EligibilityCheckOrganisation> Organisations,
     IReadOnlyCollection<EligibilityCheckFloodSource> FloodSources
 );
-
-
