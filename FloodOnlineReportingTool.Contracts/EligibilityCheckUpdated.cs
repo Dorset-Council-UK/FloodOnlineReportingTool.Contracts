@@ -7,6 +7,7 @@ public record EligibilityCheckUpdated(
     Guid Id,
     DateTimeOffset UpdatedUtc,
     long? Uprn,
+    long? Usrn,
     double Easting,
     double Northing,
     DateTimeOffset? ImpactStartUTC,

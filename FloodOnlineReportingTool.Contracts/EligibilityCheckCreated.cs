@@ -8,6 +8,7 @@ public record EligibilityCheckCreated(
     string FloodReportReference,
     DateTimeOffset CreatedUtc,
     long? Uprn,
+    long? Usrn,
     double Easting,
     double Northing,
     DateTimeOffset? ImpactStartUTC,
