@@ -1,4 +1,6 @@
-﻿namespace FloodOnlineReportingTool.Contracts.Shared;
+﻿using System.Collections.Immutable;
+
+namespace FloodOnlineReportingTool.Contracts.Shared;
 
 public static class PrimaryCauseIds
 {
@@ -16,4 +18,20 @@ public static class PrimaryCauseIds
     public readonly static Guid WavesCausedByVehicles = new("018fe094-cfc0-7156-99f5-2fc20e9e19ea");
     public readonly static Guid RainwaterFlowingOverTheGround = new("018fe095-ba20-7234-b73b-ff8e340dd9fc");
     public readonly static Guid NotSure = new("018fe096-a480-70d8-91f4-03504bcf926c");
+
+    public readonly static ImmutableHashSet<Guid> All = [
+        River,
+        StreamOrWatercourse,
+        LakeOrReservoir,
+        TheSea,
+        DitchesAndDrainageChannels,
+        WaterRisingOutOfTheGround,
+        FoulDrainageSewerage,
+        SurfaceWaterDrainage,
+        BlockedRoadDrainage,
+        BridgeOrCulvert,
+        WavesCausedByVehicles,
+        RainwaterFlowingOverTheGround,
+        NotSure,
+    ];
 }

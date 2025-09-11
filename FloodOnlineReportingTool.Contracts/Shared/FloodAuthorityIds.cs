@@ -1,4 +1,6 @@
-﻿namespace FloodOnlineReportingTool.Contracts.Shared;
+﻿using System.Collections.Immutable;
+
+namespace FloodOnlineReportingTool.Contracts.Shared;
 
 /// <summary>
 /// The flood authority IDs.
@@ -13,4 +15,14 @@ public static class FloodAuthorityIds
     public readonly static Guid ElectricityBoard = new("018fd11c-3d80-7348-b528-d2cd55312a98");
     public readonly static Guid CATRespond = new("018fd11d-27e0-76bc-9176-177880b52135");
     public readonly static Guid Voluntary = new("018fd11e-1240-782f-8aa3-f7a3fea26810");
+
+    public readonly static ImmutableHashSet<Guid> All = [
+        EnvironmentAgency,
+        LeadLocalFloodAuthority,
+        WaterAuthority,
+        GasBoard,
+        ElectricityBoard,
+        CATRespond,
+        Voluntary,
+    ];
 }
