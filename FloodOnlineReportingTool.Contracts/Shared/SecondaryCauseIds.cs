@@ -1,4 +1,6 @@
-﻿namespace FloodOnlineReportingTool.Contracts.Shared;
+﻿using System.Collections.Immutable;
+
+namespace FloodOnlineReportingTool.Contracts.Shared;
 
 public static class SecondaryCauseIds
 {
@@ -9,4 +11,13 @@ public static class SecondaryCauseIds
     public readonly static Guid RunoffFromAgriculturalLand = new("018fe0c5-55a0-7991-8ee8-1df41519d18e");
     public readonly static Guid RunoffFromOtherProperty = new("018fe0c6-4000-7e95-84d4-1ad96cf4f598");
     public readonly static Guid NotSure = new("018fe0c7-2a60-7983-b7c3-afa68072aa5f");
+
+    public readonly static ImmutableHashSet<Guid> All = [
+        RunoffFromRoad,
+        RunoffFromPrivateRoad,
+        RunoffFromTrackOrPath,
+        RunoffFromAgriculturalLand,
+        RunoffFromOtherProperty,
+        NotSure,
+    ];
 }
