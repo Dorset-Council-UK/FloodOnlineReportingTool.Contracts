@@ -15,6 +15,7 @@ public record EligibilityCheckUpdated(
     bool IsOnGoing,
     bool IsUninhabitable,
     int? VulnerableCount,
+    string? LocationDescription,
     IReadOnlyCollection<EligibilityCheckOrganisation> Organisations,
     IReadOnlyCollection<EligibilityCheckFloodSource> FloodSources
 );
