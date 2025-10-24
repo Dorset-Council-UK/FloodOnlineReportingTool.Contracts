@@ -14,7 +14,7 @@ public static class OrganisationIds
 
     public readonly static ImmutableHashSet<Guid> All = [
         Dorset,
-        Wessex, 
+        Wessex,
         DevonCornwall,
     ];
 }
