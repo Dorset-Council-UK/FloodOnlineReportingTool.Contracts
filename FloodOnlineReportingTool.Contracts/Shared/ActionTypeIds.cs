@@ -18,7 +18,7 @@ public static class ActionTypeIds
     public readonly static Guid TriggerReplyReceived = new("f6a7b8c9-a3b4-4cde-def0-6789012345f0");
 
     /// <summary>
-    /// These action IDs are used to communicate the result of an action taken between the systems using a shared Guid.
+    /// These actions are used to communicate the result of an action taken between the systems using a shared Guid.
     /// </summary>
     public readonly static Guid NotificationSent = new("a7b8c9d0-b4c5-4def-ef01-789012345601");
     public readonly static Guid NotificationError = new("b8c9d0e1-c5d6-4ef0-f012-890123456712");

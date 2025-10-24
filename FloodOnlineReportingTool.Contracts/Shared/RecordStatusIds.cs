@@ -7,7 +7,7 @@ public static class RecordStatusIds
     // In original FORT flood reports were known as POINT and events were known as AREA records
 
     /// <summary>
-    /// Flood report status Id's
+    /// Flood report status Ids
     /// </summary>
     public readonly static Guid MarkedForDeletion = new("018feb0f-4e80-767d-8262-36a1217ae690"); // The record is marked for deletion
     /// <remarks>In original FORT this was Unread</remarks>
@@ -21,7 +21,7 @@ public static class RecordStatusIds
     public readonly static Guid Error = new("018feb13-e260-7c11-9106-c179ba7c8ce4"); // This record has an error and needs to be reviewed
 
     /// <summary>
-    /// Flood event phase Id's
+    /// Flood event phase Ids
     /// </summary>
     public readonly static Guid PreparePhase = new("018feb46-3d00-72a8-a3e1-056e99014150");
     public readonly static Guid ResponsePhase = new("018feb47-2760-7161-af3d-6c1036e802ed");
@@ -29,7 +29,7 @@ public static class RecordStatusIds
     public readonly static Guid AnalysePhase = new("018feb48-fc20-7d06-b7cd-b4440af84719");
 
     /// <summary>
-    /// Flood event status Id's
+    /// Flood event status Ids
     /// This is used to track the overview of the impact of a flood event where events that flooded properties are of most interest.
     /// </summary>
     public readonly static Guid FloodExpectedNoFlood = new("018feb7d-2b80-7da6-bd00-dd2c83fa2a2e");
@@ -41,13 +41,13 @@ public static class RecordStatusIds
     public readonly static Guid NoFloodingOccurred = new("018feb82-a9c0-7d33-bbf1-64422e309748");
 
     /// <summary>
-    /// Validation Id's
+    /// Validation Ids
     /// </summary>
     public readonly static Guid Unconfirmed = new("018febb4-1a00-7aee-9b88-1d748f18c059");
     public readonly static Guid Validated = new("018febb5-0460-790e-bd7f-9684e1aa6ce9");
 
     /// <summary>
-    /// Section 19 Id's
+    /// Section 19 Ids
     /// </summary>
     public readonly static Guid NoSection19 = new("018febeb-0880-7532-b583-3d9502dffd7b");
     public readonly static Guid Section19Required = new("018febeb-f2e0-7d1d-89a3-b76b1fe98343");
@@ -55,7 +55,7 @@ public static class RecordStatusIds
     public readonly static Guid Section19Included = new("018febed-c7a0-7994-8c44-4623142fdfb1");
 
     /// <summary>
-    /// Data Protection Id's
+    /// Data Protection Ids
     /// </summary>
     public readonly static Guid NotAcknowledged = new("018fec21-f700-745d-a90f-9f0204c1e2d6");
     public readonly static Guid Agreed = new("018fec22-e160-7cda-92ef-1e9b92d7dd1c");
