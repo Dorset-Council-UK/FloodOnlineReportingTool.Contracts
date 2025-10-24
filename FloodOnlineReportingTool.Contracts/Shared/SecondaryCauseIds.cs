@@ -4,7 +4,7 @@ namespace FloodOnlineReportingTool.Contracts.Shared;
 
 public static class SecondaryCauseIds
 {
-    // Secondary cause Id's
+    // Secondary cause Ids
     public readonly static Guid RunoffFromRoad = new("018fe0c2-9680-78b5-a5fd-ca2bb2ddd0e3");
     public readonly static Guid RunoffFromPrivateRoad = new("018fe0c3-80e0-7a22-a8d4-36ad1e5dd626");
     public readonly static Guid RunoffFromTrackOrPath = new("018fe0c4-6b40-7441-afbb-381e233f4906");
