@@ -30,7 +30,10 @@ public static class RecordStatusIds
 
     /// <summary>
     /// Flood event status Ids
-    /// This is used to track the overview of the impact of a flood event where events that flooded properties are of most interest.
+    /// This is used to track the overview of the impact of a flood event.
+    /// We capture whether the event is a prediction or past event and whether properties were flooded. 
+    /// This allows you to filter events, for example only events where properties were flooded internally
+    /// vs events where it was only blocked access.
     /// </summary>
     public readonly static Guid FloodExpectedNoFlood = new("018feb7d-2b80-7da6-bd00-dd2c83fa2a2e");
     public readonly static Guid FloodExpectedHelpGiven = new("018feb7e-15e0-7a9d-ac21-bc1cc63e081c");
