@@ -8,7 +8,7 @@ namespace FloodOnlineReportingTool.Contracts;
 /// We are making an assumption that the system managing the flood reports is responsible for notifying the contacts.
 /// However, we need to know if contacts exist and what types they are so we can notify linked systems:
 ///  - whether a request can be made
-///  - what type of person may receive the request (tenant, owner, non-resident)
+///  - what type of person may receive the request (tenant, home owner, non-resident)
 /// </summary>
 public record FloodReportCreated(
     Guid Id,

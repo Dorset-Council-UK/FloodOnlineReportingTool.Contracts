@@ -8,6 +8,6 @@ public enum ContactRecordType
 {
     Unknown = 0,
     Tenant,
-    Owner,
+    HomeOwner,
     NonResident,
 }

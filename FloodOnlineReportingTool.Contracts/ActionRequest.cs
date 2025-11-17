@@ -12,7 +12,7 @@ namespace FloodOnlineReportingTool.Contracts;
 /// <param name="ContactRecordTypes">
 /// Optional - this is a list of associated contact types.
 /// Example: the action type is notification sent. 
-/// The included types would represent those notified successfully (such as sent to owner and non-resident).
+/// The included types would represent those notified successfully (such as sent to home owner and non-resident).
 /// A separate ActionLog may also be included in the update message which states that the message to the tenant failed.
 /// </param>
 /// 
