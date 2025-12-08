@@ -15,7 +15,7 @@ Provide a clear summary of the new functionality or improvement being introduced
 Outline the approach for implementing the feature. Include key components, workflows, or technical considerations.
 
 ## Additional Context
-Include any relevant details, or references that help explain the feature.
+Include any relevant details or references that help explain the feature.
 
 ## Diagrams (Optional)
 Include a diagram (e.g., Mermaid) if it helps explain the feature or its components. This is optional but recommended for complex workflows.
