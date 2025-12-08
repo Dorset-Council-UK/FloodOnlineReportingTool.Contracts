@@ -1,9 +1,10 @@
 ---
 name: Task
 about: A specific piece of work
-title: "[TASK] "
+title: ''
 labels: enhancement
 assignees: ''
+type: task
 
 ---
 
