@@ -4,7 +4,7 @@
 		<TargetFramework>net9.0</TargetFramework>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<Version>2.1.0</Version>
+		<Version>2.2.0</Version>
 		<Authors>Dorset Council</Authors>
 		<Company>Dorset Council</Company>
 		<Description>Contains the contracts used for the messaging system of the Flood Online Reporting Tool.</Description>
@@ -16,6 +16,10 @@
 
 	<ItemGroup>
 		<None Include="..\README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Npgsql.NetTopologySuite" Version="10.0.0" />
 	</ItemGroup>
 
 </Project>
