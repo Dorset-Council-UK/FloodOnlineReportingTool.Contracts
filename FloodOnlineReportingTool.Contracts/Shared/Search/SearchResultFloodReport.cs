@@ -1,4 +1,6 @@
-﻿namespace FloodOnlineReportingTool.Contracts.Shared.Search;
+﻿using NetTopologySuite.Geometries;
+
+namespace FloodOnlineReportingTool.Contracts.Shared.Search;
 
 /// <summary>
 /// Represents a search result for a flood report, including its unique identifier, creation and update timestamps,
@@ -8,8 +10,7 @@ public record SearchResultFloodReport(
     Guid Id,
     DateTimeOffset CreatedUtc,
     DateTimeOffset? UpdatedUtc,
-    double Easting,
-    double Northing,
+    Point Location,
     DateTimeOffset? ImpactStartUtc,
     IReadOnlyCollection<SearchResultFloodReportSource> Sources
 );
