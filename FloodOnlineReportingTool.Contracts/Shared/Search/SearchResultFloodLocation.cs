@@ -10,6 +10,6 @@ public record SearchResultFloodLocation(
     DateTimeOffset CreatedUtc,
     DateTimeOffset? UpdatedUtc,
     string Title,
-    Point Location,
+    Point Geom,
     IReadOnlyCollection<SearchResultFloodLocationFloodReport> FloodReports
 );

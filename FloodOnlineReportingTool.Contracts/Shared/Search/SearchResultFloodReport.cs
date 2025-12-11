@@ -10,7 +10,7 @@ public record SearchResultFloodReport(
     Guid Id,
     DateTimeOffset CreatedUtc,
     DateTimeOffset? UpdatedUtc,
-    Point Location,
+    Point Geom,
     DateTimeOffset? ImpactStartUtc,
     IReadOnlyCollection<SearchResultFloodReportSource> Sources
 );
