@@ -10,7 +10,7 @@ public record SearchResultFloodProperty(
     DateTimeOffset CreatedUtc,
     DateTimeOffset? UpdatedUtc,
     string Title,
-    string Uprn,
+    long Uprn,
     Point Geom,
     IReadOnlyCollection<SearchResultFloodPropertyFloodReport> FloodReports
 );
