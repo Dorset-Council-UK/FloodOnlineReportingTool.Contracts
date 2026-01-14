@@ -12,5 +12,7 @@ public record SearchResultFloodProperty(
     string Title,
     long Uprn,
     Point Geom,
+    decimal Latitude,
+    decimal Longitude,
     IReadOnlyCollection<SearchResultFloodPropertyFloodReport> FloodReports
 );
