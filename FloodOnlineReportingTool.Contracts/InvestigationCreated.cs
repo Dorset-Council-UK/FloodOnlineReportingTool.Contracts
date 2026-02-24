@@ -15,6 +15,7 @@ public record InvestigationCreated
     public required bool HasInternalFlooding { get; init; }
     public required bool HasDestination { get; init; }
     public required bool HasDamagedVehicles { get; init; }
+    public required bool HasImpactedServices { get; init; }
     public required bool HasImpactedTheCommunity { get; init; }
     public required bool HasBlockages { get; init; }
     public required bool ActionsWereTaken { get; init; }
