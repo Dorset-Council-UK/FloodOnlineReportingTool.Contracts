@@ -11,5 +11,7 @@ public record SearchResultFloodLocation(
     DateTimeOffset? UpdatedUtc,
     string Title,
     Point Geom,
+    decimal Latitude,
+    decimal Longitude,
     IReadOnlyCollection<SearchResultFloodLocationFloodReport> FloodReports
 );

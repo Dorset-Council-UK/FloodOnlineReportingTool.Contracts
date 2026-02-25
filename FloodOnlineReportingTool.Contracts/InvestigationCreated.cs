@@ -10,10 +10,12 @@ public record InvestigationCreated
     public required DateTimeOffset CreatedUtc { get; init; }
     public required bool HasEntries { get; init; }
     public required bool HasHistory { get; init; }
+    public required bool HasPropertyInsurance { get; init; }
     public required bool HasPeakDepth { get; init; }
     public required bool HasInternalFlooding { get; init; }
     public required bool HasDestination { get; init; }
     public required bool HasDamagedVehicles { get; init; }
+    public required bool HasImpactedServices { get; init; }
     public required bool HasImpactedTheCommunity { get; init; }
     public required bool HasBlockages { get; init; }
     public required bool ActionsWereTaken { get; init; }

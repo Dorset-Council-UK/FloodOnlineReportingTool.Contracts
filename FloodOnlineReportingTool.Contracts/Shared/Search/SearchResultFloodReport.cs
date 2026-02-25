@@ -11,6 +11,8 @@ public record SearchResultFloodReport(
     DateTimeOffset CreatedUtc,
     DateTimeOffset? UpdatedUtc,
     Point Geom,
+    decimal Latitude,
+    decimal Longitude,
     DateTimeOffset? ImpactStartUtc,
     IReadOnlyCollection<SearchResultFloodReportSource> Sources
 );
