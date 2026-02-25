@@ -5,7 +5,7 @@ namespace FloodOnlineReportingTool.Contracts.Shared;
 public static class Section19Ids
 {
     /// <summary>
-    /// Status Ids describing whether a Section 19 is in progress.
+    /// Status Ids describing the overall Section 19 state.
     /// </summary>
     public readonly static Guid NoSection19 = new("018febeb-0880-7532-b583-3d9502dffd7b");
     public readonly static Guid Section19Required = new("018febeb-f2e0-7d1d-89a3-b76b1fe98343");
