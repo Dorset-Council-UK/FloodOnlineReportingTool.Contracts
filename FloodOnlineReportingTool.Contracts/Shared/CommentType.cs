@@ -1,10 +1,10 @@
 ﻿namespace FloodOnlineReportingTool.Contracts.Shared;
 
+/// <summary>
+/// All the comment types available for the FORT system.
+/// </summary>
 public enum CommentType
 {
-    /// <summary>
-    /// All the comment types available for the FORT system.
-    /// </summary>
     PublicComment = 0,
     UserComment,
     ProblemComment,
