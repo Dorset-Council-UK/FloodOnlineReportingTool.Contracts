@@ -2,7 +2,7 @@
 
 namespace FloodOnlineReportingTool.Contracts.Shared;
 
-public static class Section19Ids
+public static class Section19StatusIds
 {
     /// <summary>
     /// Status Ids describing whether a Section 19 is in progress.
