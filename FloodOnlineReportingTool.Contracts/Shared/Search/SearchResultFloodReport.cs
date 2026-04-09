@@ -8,6 +8,8 @@ namespace FloodOnlineReportingTool.Contracts.Shared.Search;
 /// </summary>
 public record SearchResultFloodReport(
     Guid Id,
+    string Reference,
+    Uri ViewUri,
     DateTimeOffset CreatedUtc,
     DateTimeOffset? UpdatedUtc,
     Point Geom,

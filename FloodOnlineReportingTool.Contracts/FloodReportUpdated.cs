@@ -8,7 +8,7 @@ public record FloodReportUpdated
 (
     Guid Id,
     string Reference,
-    string ViewUri,
+    Uri ViewUri,
     DateTimeOffset UpdatedUtc,
     Guid RecordStatusUpdate,
     IReadOnlyCollection<ActionRequest> ActionStatusUpdates

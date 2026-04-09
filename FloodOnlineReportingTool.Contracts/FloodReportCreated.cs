@@ -13,7 +13,7 @@ namespace FloodOnlineReportingTool.Contracts;
 public record FloodReportCreated(
     Guid Id,
     string Reference,
-    string ViewUri,
+    Uri ViewUri,
     DateTimeOffset CreatedUtc,
     bool HasEligibilityCheck,
     bool HasInvestigation,
