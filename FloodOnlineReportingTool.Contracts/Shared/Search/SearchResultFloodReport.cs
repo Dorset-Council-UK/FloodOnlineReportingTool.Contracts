@@ -1,20 +1,12 @@
-﻿using NetTopologySuite.Geometries;
-
-namespace FloodOnlineReportingTool.Contracts.Shared.Search;
+﻿namespace FloodOnlineReportingTool.Contracts.Shared.Search;
 
 /// <summary>
 /// Represents a search result for a flood report, including its unique identifier, creation and update timestamps,
 /// data sources.
 /// </summary>
+/// <param name="RecordStatus">Is a GUID representing a RecordStatusIds</param>
 public record SearchResultFloodReport(
-    Guid Id,
-    string Reference,
-    Uri ViewUri,
-    DateTimeOffset CreatedUtc,
-    DateTimeOffset? UpdatedUtc,
-    Point Geom,
-    decimal Latitude,
-    decimal Longitude,
-    DateTimeOffset? ImpactStartUtc,
-    IReadOnlyCollection<SearchResultFloodReportSource> Sources
+   Guid Id,
+   Guid RecordStatus,
+   IReadOnlyCollection<SearchResultFloodReportSource> SourceRecords
 );

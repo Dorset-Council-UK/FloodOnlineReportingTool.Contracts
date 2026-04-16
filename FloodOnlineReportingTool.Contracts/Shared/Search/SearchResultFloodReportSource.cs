@@ -1,8 +1,22 @@
-﻿namespace FloodOnlineReportingTool.Contracts.Shared.Search;
+﻿using NetTopologySuite.Geometries;
+
+namespace FloodOnlineReportingTool.Contracts.Shared.Search;
 
 /// <summary>
-/// Represents the source of a flood report in a search result.
+/// Represents the source record for a flood report in the search result. 
+/// For example it might be a public report of flooding or a site visit from a professional partner.
 /// </summary>
-/// <param name="SourceId">The unique identifier of the flood report source.</param>
-/// <param name="Name">A helpful name or description of the flood report source.</param>
-public record SearchResultFloodReportSource(Guid SourceId, string Name);
+public record SearchResultFloodReportSource(
+    Guid Id,
+    string Reference,
+    Uri ViewUri,
+    DateTimeOffset CreatedUtc,
+    DateTimeOffset? UpdatedUtc,
+    Point Geom,
+    double Easting,
+    double Northing,
+    decimal Latitude,
+    decimal Longitude,
+    DateTimeOffset? ImpactStartUtc,
+    IReadOnlyCollection<SearchResultFloodReportCause> Causes,
+    IReadOnlyCollection<SearchResultFloodReportOrganisation> Organisations) : ISearchResultFloodReportSource;

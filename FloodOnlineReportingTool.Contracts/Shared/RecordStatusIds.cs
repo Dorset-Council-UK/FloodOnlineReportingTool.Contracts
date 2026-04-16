@@ -18,6 +18,7 @@ public static class RecordStatusIds
     public readonly static Guid ActionNeeded = new("018feb12-0da0-749b-a59a-cb3ed128d982"); // Action is needed on this record and needs to be reviewed
     /// <remarks>In original FORT this was Investigated</remarks>
     public readonly static Guid ActionCompleted = new("018feb12-f800-75e0-ab95-e780864249c8"); // Action has been completed on this record
+    public readonly static Guid DuplicateDetected = new("018feb13-0b00-7c8e-9a1c-1d9b2f8c3c44"); // This record has been identified as having possible duplicate source records and needs to be reviewed
     /// <remarks>In original FORT this was Invalid</remarks>
     public readonly static Guid Error = new("018feb13-e260-7c11-9106-c179ba7c8ce4"); // This record has an error and needs to be reviewed
 
@@ -34,7 +35,7 @@ public static class RecordStatusIds
     public readonly static Guid Agreed = new("018fec22-e160-7cda-92ef-1e9b92d7dd1c");
 
     public readonly static ImmutableHashSet<Guid> All = [
-        MarkedForDeletion, New, Viewed, ActionNeeded, ActionCompleted, Error,
+        MarkedForDeletion, New, Viewed, ActionNeeded, ActionCompleted, DuplicateDetected, Error,
         Unconfirmed, Validated,
         NotAcknowledged, Agreed
     ];
