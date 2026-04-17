@@ -4,9 +4,9 @@
 /// Represents a search result for a flood report, including its unique identifier, creation and update timestamps,
 /// data sources.
 /// </summary>
-/// <param name="RecordStatus">Is a GUID representing a RecordStatusIds</param>
+/// <param name="RecordStatusId">Is a GUID representing a RecordStatusIds</param>
 public record SearchResultFloodReport(
    Guid Id,
-   Guid RecordStatus,
+   Guid RecordStatusId,
    IReadOnlyCollection<SearchResultFloodReportSource> SourceRecords
 );
