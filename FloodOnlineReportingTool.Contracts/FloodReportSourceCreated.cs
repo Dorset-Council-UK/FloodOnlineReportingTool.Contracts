@@ -10,11 +10,13 @@ namespace FloodOnlineReportingTool.Contracts;
 ///  - whether a request can be made
 ///  - what type of person may receive the request (tenant, home owner, non-resident)
 /// </summary>
-public record FloodReportCreated(
+public record FloodReportSourceCreated(
     Guid Id,
+    double Buffer,
     string Reference,
+    Uri ViewUri,
     DateTimeOffset CreatedUtc,
-    bool HasEligibilityCheck,
+    EligibilityCheckRecord EligibilityCheckRecord,
     bool HasInvestigation,
     bool HasContacts,
     IReadOnlyCollection<ContactRecordType> ContactRecordTypes

@@ -3,4 +3,4 @@
 /// <summary>
 /// Flood report deleted contract using an immutable record.
 /// </summary>
-public record FloodReportDeleted(Guid Id, string Reference);
+public record FloodReportSourceDeleted(Guid Id, string Reference);

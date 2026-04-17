@@ -3,10 +3,8 @@
 /// <summary>
 /// Eligibility check created contract using an immutable record.
 /// </summary>
-public record EligibilityCheckCreated(
+public record EligibilityCheckRecord(
     Guid Id,
-    string FloodReportReference,
-    DateTimeOffset CreatedUtc,
     long? Uprn,
     long? Usrn,
     double Easting,
