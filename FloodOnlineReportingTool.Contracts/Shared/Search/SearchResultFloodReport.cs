@@ -7,6 +7,7 @@
 /// <param name="RecordStatusId">Is a GUID representing a RecordStatusIds</param>
 public record SearchResultFloodReport(
    Guid Id,
+   string Reference,
    Guid RecordStatusId,
    IReadOnlyCollection<SearchResultFloodReportSource> SourceRecords
 );
