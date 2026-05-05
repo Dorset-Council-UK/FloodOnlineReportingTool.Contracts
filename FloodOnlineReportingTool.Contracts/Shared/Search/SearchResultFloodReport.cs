@@ -1,10 +1,9 @@
 ﻿namespace FloodOnlineReportingTool.Contracts.Shared.Search;
 
 /// <summary>
-/// Represents a search result for a flood report, including its unique identifier, creation and update timestamps,
-/// data sources.
+/// Represents a flood report search result, including its reference, status, and associated source records.
 /// </summary>
-/// <param name="RecordStatusId">Is a GUID representing a RecordStatusIds</param>
+/// <param name="RecordStatusId">The unique identifier of the record status.</param>
 public record SearchResultFloodReport(
    Guid Id,
    string Reference,
