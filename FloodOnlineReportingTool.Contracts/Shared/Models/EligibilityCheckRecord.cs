@@ -1,11 +1,10 @@
-﻿namespace FloodOnlineReportingTool.Contracts;
+﻿namespace FloodOnlineReportingTool.Contracts.Shared.Models;
 
 /// <summary>
-/// Eligibility check updated contract using an immutable record.
+/// Eligibility check created contract using an immutable record.
 /// </summary>
-public record EligibilityCheckUpdated(
+public record EligibilityCheckRecord(
     Guid Id,
-    DateTimeOffset UpdatedUtc,
     long? Uprn,
     long? Usrn,
     double Easting,
