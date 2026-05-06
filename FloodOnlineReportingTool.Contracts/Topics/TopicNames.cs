@@ -13,5 +13,4 @@ public static class TopicNames
     public const string FloodReportUpdated = "floodreport.management-updatereport";
     public const string FloodReportDeleted = "floodreport.management-deletereport";
     public const string InvestigationTriggered = "floodreport.management-investigation";
-    public const string PasswordResetTriggered = "floodreport.management-passwordreset";
 }
