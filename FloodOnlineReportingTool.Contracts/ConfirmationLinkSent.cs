@@ -1,6 +1,8 @@
 ﻿namespace FloodOnlineReportingTool.Contracts;
 
 /// <summary>
-/// Confirmation link sent contract using an immutable record.
+/// Contract used to re-trigger email validation for a given contact record using an immutable record.
 /// </summary>
-public record ConfirmationLinkSent(string UserId, string EmailAddress, string ConfirmationLink);
+/// <remarks>Use <see cref="ContactValidationTriggered"/> instead.</remarks>
+[Obsolete($"Use {nameof(ContactValidationTriggered)} instead.", error: false)]
+public record ConfirmationLinkSent(string ContactRecordId);

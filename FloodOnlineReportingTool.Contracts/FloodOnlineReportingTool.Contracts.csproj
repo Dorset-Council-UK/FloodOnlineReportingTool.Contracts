@@ -22,4 +22,8 @@
 	  <PackageReference Include="Npgsql.NetTopologySuite" Version="10.0.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="FloodOnlineReportingTool.Contracts\" />
+	</ItemGroup>
+
 </Project>
