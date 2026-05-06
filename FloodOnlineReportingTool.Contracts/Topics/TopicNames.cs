@@ -8,7 +8,7 @@ public static class TopicNames
     public const string FloodReportSourceUpdated = "floodreport.status-updatereport";
     public const string FloodReportSourceDeleted = "floodreport.status-deletereport";
     public const string InvestigationCreated = "floodreport.status-createinvestigation";
-    public const string ContactValidationTriggered = "floodreport.status.contactvalidationtriggered";
+    public const string VerifyContactTriggered = "floodreport.status-verifycontacttriggered";
     public const string FloodReportCreated = "floodreport.management-createreport";
     public const string FloodReportUpdated = "floodreport.management-updatereport";
     public const string FloodReportDeleted = "floodreport.management-deletereport";
