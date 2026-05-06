@@ -6,7 +6,7 @@ namespace FloodOnlineReportingTool.Contracts;
 /// This record allows us to bind together an action with associated information (if required).
 /// </summary>
 /// <param name="ActionRequestId">
-/// Required - there must be an action type.
+/// Requred - there must be an action type.
 /// </param>
 /// 
 /// <param name="ContactRecordTypes">

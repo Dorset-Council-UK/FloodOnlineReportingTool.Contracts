@@ -1,4 +1,4 @@
-﻿namespace FloodOnlineReportingTool.Contracts.Shared.Models;
+﻿namespace FloodOnlineReportingTool.Contracts;
 
 public record EligibilityCheckFloodSource(
     Guid Id,

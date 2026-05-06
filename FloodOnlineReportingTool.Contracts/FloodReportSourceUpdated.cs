@@ -1,9 +1,7 @@
-﻿using FloodOnlineReportingTool.Contracts.Shared.Models;
-
-namespace FloodOnlineReportingTool.Contracts;
+﻿namespace FloodOnlineReportingTool.Contracts;
 
 /// <summary>
-/// This message is used to communicate changes to the flood source records between systems. 
+/// This message is used to communicate changes to the flood records between systems. 
 /// Updating the record status and may optionally also be triggering an action requests.
 /// </summary>
 public record FloodReportSourceUpdated
@@ -13,6 +11,6 @@ public record FloodReportSourceUpdated
     Uri ViewUri,
     DateTimeOffset UpdatedUtc,
     Guid RecordStatusUpdate,
-    EligibilityCheckRecord? EligibilityCheckRecord,
+    EligibilityCheckUpdated? EligibilityCheckUpdated,
     IReadOnlyCollection<ActionRequest> ActionStatusUpdates
 );
