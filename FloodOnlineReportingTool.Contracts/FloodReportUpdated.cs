@@ -6,13 +6,13 @@ namespace FloodOnlineReportingTool.Contracts;
 /// Flood report updated contract using an immutable record.
 /// 
 /// This is used to notify flood risk management modules that a flood report has been updated.
-/// We provide the updated status so the module can generate suitable actions.
+/// We provide the updated RecordStatusId so the module can generate suitable actions.
 /// </summary>
 public record FloodReportUpdated(
     Guid Id,
     string Reference,
     DateTimeOffset UpdatedUtc,
-    Guid UpdatedStatus, // Suitable RecordStatusIds
+    Guid RecordStatusId, // Updated flood report RecordStatusId
     bool HasInvestigation,
     bool HasContacts,
     IReadOnlyCollection<ContactRecordType> ContactRecordTypes
