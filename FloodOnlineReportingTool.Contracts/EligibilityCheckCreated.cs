@@ -1,10 +1,16 @@
-﻿namespace FloodOnlineReportingTool.Contracts;
+﻿using FloodOnlineReportingTool.Contracts.Shared.Models;
+
+namespace FloodOnlineReportingTool.Contracts;
 
 /// <summary>
 /// Eligibility check created contract using an immutable record.
 /// </summary>
-public record EligibilityCheckRecord(
+/// <remarks>Use <see cref="FloodReportSourceCreated"/> instead.</remarks>
+[Obsolete($"Use {nameof(FloodReportSourceCreated)} instead.", error: false)]
+public record EligibilityCheckCreated(
     Guid Id,
+    string FloodReportReference,
+    DateTimeOffset CreatedUtc,
     long? Uprn,
     long? Usrn,
     double Easting,
