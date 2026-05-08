@@ -12,6 +12,8 @@ public record FloodReportCreated(
     Guid Id,
     string Reference,
     DateTimeOffset CreatedUtc,
+    double Easting,
+    double Northing,
     bool HasContacts,
     IReadOnlyCollection<ContactRecordType> ContactRecordTypes
 );
