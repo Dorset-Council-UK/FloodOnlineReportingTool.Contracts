@@ -13,6 +13,8 @@ public record FloodReportUpdated(
     string Reference,
     DateTimeOffset UpdatedUtc,
     Guid RecordStatusId, // Updated flood report RecordStatusId
+    double Easting,
+    double Northing,
     bool HasInvestigation,
     bool HasContacts,
     IReadOnlyCollection<ContactRecordType> ContactRecordTypes
