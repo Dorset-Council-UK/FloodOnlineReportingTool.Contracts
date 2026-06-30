@@ -5,10 +5,11 @@ on:
     tags:
       - v*
   pull_request:
-    branches: [ main ]
+    branches: [ main ]  
     
 permissions:
   contents: read
+  id-token: write  # enable GitHub OIDC token issuance for this job
   
 jobs:
   build:
