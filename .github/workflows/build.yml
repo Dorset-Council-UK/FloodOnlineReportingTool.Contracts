@@ -9,7 +9,6 @@ on:
     
 permissions:
   contents: read
-  id-token: write  # enable GitHub OIDC token issuance for this job
   
 jobs:
   build:
@@ -37,6 +36,9 @@ jobs:
     needs: build
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write  # enable GitHub OIDC token issuance for this job
 
     steps:
       - uses: actions/setup-dotnet@v4
