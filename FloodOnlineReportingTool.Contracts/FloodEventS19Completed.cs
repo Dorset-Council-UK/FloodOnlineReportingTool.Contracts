@@ -1,11 +1,9 @@
-namespace FloodOnlineReportingTool.Contracts;
+﻿namespace FloodOnlineReportingTool.Contracts;
 
 /// <summary>
-/// Contract indicating that a flood event section 19 report has been completed.
+/// TODO : This contract doesn't seem to be what it should be. This should be a message to indicate that a flood event section 19 report has been completed, but it contains a lot of properties that are not relevant to the flood event itself.
 /// </summary>
-/// <remarks>Use <see cref="FloodEventS19Completed"/> instead.</remarks>
-[Obsolete($"Use {nameof(FloodEventS19Completed)} instead.", error: false)]
-public record InvestigationCreated
+public record FloodEventS19Completed
 {
     public required string FloodReportReference { get; init; }
     public required Guid Id { get; init; }
