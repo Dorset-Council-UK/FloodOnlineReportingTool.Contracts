@@ -14,5 +14,5 @@ public record FloodReportSourceUpdated
     DateTimeOffset UpdatedUtc,
     Guid RecordStatusUpdate,
     EligibilityCheckRecord? EligibilityCheckRecord,
-    IReadOnlyCollection<ActionRequest> ActionStatusUpdates
+    IReadOnlyCollection<FloodEventActionRequest> ActionStatusUpdates
 );
