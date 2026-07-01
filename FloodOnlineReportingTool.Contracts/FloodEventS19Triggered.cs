@@ -3,4 +3,4 @@
 /// <summary>
 /// Investigation triggered contract using an immutable record.
 /// </summary>
-public record InvestigationTriggered(Guid Id, string Reference, DateTimeOffset TriggeredUtc);
+public record FloodEventS19Triggered(Guid Id, string Reference, DateTimeOffset TriggeredUtc);

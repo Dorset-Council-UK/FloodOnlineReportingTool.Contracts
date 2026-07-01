@@ -24,7 +24,7 @@ namespace FloodOnlineReportingTool.Contracts;
 /// <param name="ActionRequestMessage">
 /// Optional - if you are requesting a reply you may want to include a message to be sent.
 /// </param>
-public record ActionRequest
+public record FloodEventActionRequest
 (
     Guid ActionRequestId,
     IReadOnlyCollection<ContactRecordType> ContactRecordTypes,
