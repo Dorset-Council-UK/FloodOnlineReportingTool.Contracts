@@ -13,5 +13,5 @@ public record FloodReportSourceUpdated
     Guid RecordStatusUpdate,
     EligibilityCheckRecord? EligibilityCheckRecord,
     IReadOnlyCollection<FloodEventActionRequest> ActionStatusUpdates,
-    Guid? Id = null
+    Guid? Id
 );

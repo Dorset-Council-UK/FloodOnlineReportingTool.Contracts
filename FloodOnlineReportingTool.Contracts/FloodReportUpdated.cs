@@ -16,5 +16,5 @@ public record FloodReportUpdated(
     bool HasInvestigation,
     bool HasContacts,
     IReadOnlyCollection<ContactRecordType> ContactRecordTypes,
-    Guid? Id = null
+    Guid? Id
 );
