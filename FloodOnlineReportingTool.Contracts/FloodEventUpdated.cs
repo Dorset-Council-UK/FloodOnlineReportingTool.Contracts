@@ -17,5 +17,5 @@ public record FloodEventUpdated(
     IReadOnlyCollection<Guid>? FloodCauses,
     IReadOnlyCollection<Guid>? Organisations,
     IReadOnlyCollection<Guid>? StatusFilter,
-    IReadOnlyCollection<Guid>? LinkedFloodReports
+    IReadOnlyCollection<string>? LinkedFloodReports
 );
