@@ -8,7 +8,7 @@ namespace FloodOnlineReportingTool.Contracts;
 /// </summary>
 public record FloodReportSourceUpdated
 (
-    Guid? Id,
+    Guid? Id = null,
     string Reference,
     Uri ViewUri,
     Guid RecordStatusUpdate,
