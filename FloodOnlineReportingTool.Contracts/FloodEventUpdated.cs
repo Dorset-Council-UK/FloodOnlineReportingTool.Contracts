@@ -6,9 +6,16 @@
 /// This is used to notify flood risk management modules that a flood event has been updated.
 /// </summary>
 public record FloodEventUpdated(
-    Guid Id,
+    Guid? Id,
+    string Reference,
     string Title,
-    DateTimeOffset UpdatedUtc,
-    bool HasSection19Report,
-    IReadOnlyCollection<Guid> LinkedFloodReports
+    Guid RecordStatus,
+    Guid FloodStatus,
+    Guid InvestigationStatus,
+    DateTimeOffset FloodStartDate,
+    DateTimeOffset FloodEndDate,
+    IReadOnlyCollection<Guid>? FloodCauses,
+    IReadOnlyCollection<Guid>? Organisations,
+    IReadOnlyCollection<Guid>? StatusFilter,
+    IReadOnlyCollection<Guid>? LinkedFloodReports
 );
