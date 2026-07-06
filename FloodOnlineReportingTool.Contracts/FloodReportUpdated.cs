@@ -9,13 +9,12 @@ namespace FloodOnlineReportingTool.Contracts;
 /// We provide the updated RecordStatusId so the module can generate suitable actions.
 /// </summary>
 public record FloodReportUpdated(
-    Guid Id,
     string Reference,
-    DateTimeOffset UpdatedUtc,
     Guid RecordStatusId, // Updated flood report RecordStatusId
     double Easting,
     double Northing,
     bool HasInvestigation,
     bool HasContacts,
-    IReadOnlyCollection<ContactRecordType> ContactRecordTypes
+    IReadOnlyCollection<ContactRecordType> ContactRecordTypes,
+    Guid? Id
 );

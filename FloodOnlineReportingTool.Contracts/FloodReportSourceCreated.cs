@@ -15,11 +15,9 @@ namespace FloodOnlineReportingTool.Contracts;
 /// The ViewUri is used as the pointer back to the original source.
 /// </summary>
 public record FloodReportSourceCreated(
-    Guid Id,
     double Buffer,
     string Reference,
     Uri ViewUri,
-    DateTimeOffset CreatedUtc,
     EligibilityCheckRecord EligibilityCheckRecord,
     bool HasInvestigation,
     bool HasContacts,

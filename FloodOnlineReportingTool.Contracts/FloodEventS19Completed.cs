@@ -5,9 +5,8 @@
 /// </summary>
 public record FloodEventS19Completed
 {
+    public Guid? Id { get; init; }
     public required string FloodReportReference { get; init; }
-    public required Guid Id { get; init; }
-    public required DateTimeOffset CreatedUtc { get; init; }
     public required bool HasEntries { get; init; }
     public required bool HasHistory { get; init; }
     public required bool HasPropertyInsurance { get; init; }

@@ -9,9 +9,7 @@ namespace FloodOnlineReportingTool.Contracts;
 /// We only provide the reference / location required to search within the module and whether or not there are contacts.  
 /// </summary>
 public record FloodReportCreated(
-    Guid Id,
     string Reference,
-    DateTimeOffset CreatedUtc,
     double Easting,
     double Northing,
     bool HasContacts,
